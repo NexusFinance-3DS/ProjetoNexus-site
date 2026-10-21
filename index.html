@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0f0f13" />
+    <title>Nexus Finance — Seu futuro começa no seu controle</title>
+    <meta
+      name="description"
+      content="Conheça o Nexus Finance: um projeto de gestão financeira para jovens acompanharem receitas, despesas e metas em um só lugar."
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%235145FF'/%3E%3Cpath d='M9 23V9h3l8 10V9h3v14h-3L12 13v10z' fill='white'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer=""></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+    <!-- MENU: os links levam às seções pelo id, como #sobre. -->
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a class="brand" href="#inicio" aria-label="Nexus Finance, início"
+          ><span class="brand-mark">N</span
+          ><span>Nexus<span class="brand-light"> Finance</span></span></a
+        >
+        <button
+          class="menu-toggle icon-button"
+          aria-expanded="false"
+          aria-controls="menu"
+          aria-label="Abrir menu"
+        >
+          <span class="icon" aria-hidden="true">menu</span>
+        </button>
+        <nav id="menu" aria-label="Navegação principal">
+          <a href="#inicio" class="active">Início</a><a href="#sobre">Sobre</a
+          ><a href="#funcionalidades">Funcionalidades</a><a href="#aplicativo">Aplicativo</a
+          ><a href="#tecnologias">Tecnologias</a><a href="#equipe">Equipe</a>
+        </nav>
+        <a href="#aplicativo" class="button button-small nav-cta">Conhecer o app</a>
+      </div>
+    </header>
+    <main id="conteudo">
+      <!-- 1. INÍCIO: título, botões, vídeo e mockup do celular. -->
+      <section id="inicio" class="hero">
+        <div class="hero-backdrop" aria-hidden="true">
+          <video
+            id="background-video"
+            autoplay=""
+            muted=""
+            loop=""
+            playsinline=""
+            preload="metadata"
+            poster="assets/nexus-poster.jpg"
+          >
+            <source src="assets/nexus-background.mp4" type="video/mp4" />
+          </video>
+          <div class="ambient ambient-one"></div>
+          <div class="ambient ambient-two"></div>
+          <div class="hero-grid"></div>
+        </div>
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="eyebrow-line"></span> SUAS FINANÇAS. SEU PRÓXIMO PASSO.
+            </p>
+            <h1>Seu futuro começa<br />no seu <em>controle.</em></h1>
+            <p class="hero-description">
+              Menos dúvidas sobre o dinheiro.<br />Mais espaço para os seus planos.
+            </p>
+            <p class="hero-support">
+              Organize receitas, acompanhe seus gastos e dê o próximo passo em direção às suas metas
+              com o Nexus Finance.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#sobre">Conheça o projeto</a
+              ><a class="button button-secondary" href="#funcionalidades">Ver funcionalidades</a>
+            </div>
+            <div class="hero-note">
+              <span class="icon" aria-hidden="true">auto_awesome</span> Feito para quem está
+              construindo o próprio caminho.
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="visual-orbit" aria-hidden="true"></div>
+            <div class="floating-card floating-goal">
+              <span class="icon icon-tile" aria-hidden="true">track_changes</span>
+              <div><span>Seus planos, mais perto</span><strong>Um passo de cada vez.</strong></div>
+            </div>
+            <div
+              class="phone hero-phone"
+              role="img"
+              aria-label="Mockup ilustrativo da tela inicial do Nexus Finance, com saldo, receitas, despesas e meta"
+            >
+              <div class="phone-camera"></div>
+              <div class="phone-status">
+                <span>9:41</span><span class="status-icons">▮▮▮ &nbsp; ▰</span>
+              </div>
+              <div class="app-screen">
+                <div class="app-header">
+                  <span class="app-avatar"
+                    ><span class="icon" aria-hidden="true">person_outline</span></span
+                  >
+                  <div><small>Bom dia,</small><strong>Seu próximo passo</strong></div>
+                  <span class="icon" aria-hidden="true">notifications_none</span>
+                </div>
+                <div class="app-balance">
+                  <div>
+                    Saldo disponível <span class="icon" aria-hidden="true">visibility</span>
+                  </div>
+                  <strong>R$ 1.450,00</strong><small>Organize hoje, planeje o amanhã</small>
+                </div>
+                <div class="app-section-title">Visão rápida <span>Este mês</span></div>
+                <div class="app-mini-grid">
+                  <div class="app-card">
+                    <span class="mini-icon green"
+                      ><span class="icon" aria-hidden="true">south_west</span></span
+                    ><small>Receitas realizadas</small><strong>R$ 2.400,00</strong>
+                  </div>
+                  <div class="app-card">
+                    <span class="mini-icon red"
+                      ><span class="icon" aria-hidden="true">north_east</span></span
+                    ><small>Despesas realizadas</small><strong>R$ 950,00</strong>
+                  </div>
+                </div>
+                <div class="app-section-title">
+                  Seus objetivos <span class="icon" aria-hidden="true">more_horiz</span>
+                </div>
+                <div class="app-card app-goal">
+                  <div class="progress-ring"><b>60%</b></div>
+                  <div>
+                    <strong>Meu notebook</strong><small>R$ 1.800 de R$ 3.000</small
+                    ><span class="purple-text">Cada passo conta</span>
+                  </div>
+                </div>
+                <div class="app-section-title">Distribuição dos gastos</div>
+                <div class="app-card app-categories">
+                  <div><span>Lazer</span><b>R$ 190</b></div>
+                  <div class="progress-track"><span style="width: 40%"></span></div>
+                  <div><span>Alimentação</span><b>R$ 380</b></div>
+                  <div class="progress-track">
+                    <span style="width: 80%; background: #9b8cff"></span>
+                  </div>
+                </div>
+                <div class="app-nav">
+                  <span class="selected"><span class="icon" aria-hidden="true">home</span></span
+                  ><span class=""><span class="icon" aria-hidden="true">swap_horiz</span></span
+                  ><span class="app-plus"><span class="icon" aria-hidden="true">add</span></span
+                  ><span class=""><span class="icon" aria-hidden="true">track_changes</span></span
+                  ><span class=""><span class="icon" aria-hidden="true">person_outline</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="floating-card floating-balance">
+              <span class="icon icon-tile green" aria-hidden="true">account_balance_wallet</span>
+              <div><span>Tudo no mesmo lugar</span><strong>Clareza para decidir.</strong></div>
+            </div>
+            <p class="mockup-caption">Interface ilustrativa baseada no aplicativo.</p>
+          </div>
+        </div>
+        <div class="container hero-bottom">
+          <span>ORGANIZAR HOJE. CONQUISTAR AMANHÃ.</span
+          ><button id="motion-toggle" class="motion-toggle" aria-pressed="false">
+            <span class="icon" aria-hidden="true">pause</span><span>Pausar animação</span>
+          </button>
+        </div>
+      </section>
+
+      <div class="value-strip">
+        <div class="container">
+          <span
+            ><span class="icon" aria-hidden="true">account_balance_wallet</span> Controle
+            financeiro</span
+          ><span><span class="icon" aria-hidden="true">track_changes</span> Objetivos pessoais</span
+          ><span><span class="icon" aria-hidden="true">insights</span> Mais clareza</span
+          ><span><span class="icon" aria-hidden="true">devices</span> Feito para sua rotina</span>
+        </div>
+      </div>
+
+      <!-- 2. SOBRE: altere os textos de apresentação nesta seção. -->
+      <section id="sobre" class="section container about-grid">
+        <div class="about-visual reveal">
+          <div class="visual-label">UM POUCO MAIS DE CLAREZA, TODOS OS DIAS.</div>
+          <div class="ledger-card">
+            <div class="ledger-header">
+              <span class="mini-brand">N</span><strong>Suas movimentações</strong
+              ><span class="period-tag">Este mês</span>
+            </div>
+            <div class="transaction-row">
+              <span class="mini-icon green"
+                ><span class="icon" aria-hidden="true">work_outline</span></span
+              >
+              <div><strong>Bolsa de estágio</strong><small>Receita · Confirmada</small></div>
+              <b class="green-text">+ R$ 1.500,00</b>
+            </div>
+            <div class="transaction-row">
+              <span class="mini-icon red"
+                ><span class="icon" aria-hidden="true">restaurant</span></span
+              >
+              <div><strong>Alimentação</strong><small>Despesa · Confirmada</small></div>
+              <b class="red-text">− R$ 380,00</b>
+            </div>
+            <div class="transaction-row">
+              <span class="mini-icon red"
+                ><span class="icon" aria-hidden="true">directions_bus</span></span
+              >
+              <div><strong>Transporte</strong><small>Despesa · Confirmada</small></div>
+              <b class="red-text">− R$ 180,00</b>
+            </div>
+            <div class="ledger-footer">
+              <span class="icon" aria-hidden="true">check_circle_outline</span> Cada lançamento
+              ajuda a enxergar o todo.
+            </div>
+          </div>
+          <div class="about-stat">
+            <span class="icon-tile"
+              ><span class="icon" aria-hidden="true">track_changes</span></span
+            >
+            <div>
+              <small>Do primeiro registro à próxima conquista</small
+              ><strong>O próximo passo é seu.</strong>
+            </div>
+          </div>
+          <span class="sample-label">Exemplo ilustrativo de movimentações.</span>
+        </div>
+        <div class="section-copy reveal">
+          <p class="eyebrow">SOBRE O NEXUS</p>
+          <h2>
+            O dinheiro faz parte<br />da vida. <em>Entender<br />ele também.</em>
+          </h2>
+          <p>
+            Entre estudos, trabalho e novos planos, nem sempre é fácil perceber para onde o dinheiro
+            está indo.
+          </p>
+          <p>
+            O Nexus Finance é um projeto de gestão financeira pessoal pensado para ajudar jovens a
+            organizar seus registros, entender seus hábitos e acompanhar objetivos com mais clareza.
+          </p>
+          <div class="text-note">
+            <span></span> Mais organização para as escolhas de hoje.<br />Mais consciência para os
+            planos de amanhã.
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. FUNCIONALIDADES: cada article é um card. -->
+      <section id="funcionalidades" class="section features-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">FUNCIONALIDADES</p>
+              <h2>Tudo se conecta.<br /><em>Você fica no controle.</em></h2>
+            </div>
+            <p>
+              Ferramentas para transformar os registros do dia a dia em uma visão mais organizada
+              das suas finanças.
+            </p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card reveal" style="--delay: 0ms">
+              <div class="feature-top">
+                <span class="feature-icon"
+                  ><span class="icon" aria-hidden="true">account_balance_wallet</span></span
+                ><span class="feature-number">01</span>
+              </div>
+              <h3>Seu dinheiro, organizado</h3>
+              <p>
+                Registre receitas e despesas com valor, data, conta e categoria. Veja suas
+                movimentações em um só lugar.
+              </p>
+            </article>
+            <article class="feature-card reveal" style="--delay: 70ms">
+              <div class="feature-top">
+                <span class="feature-icon"
+                  ><span class="icon" aria-hidden="true">track_changes</span></span
+                ><span class="feature-number">02</span>
+              </div>
+              <h3>Metas que fazem sentido</h3>
+              <p>
+                Defina um objetivo, registre o valor já guardado e acompanhe o progresso das suas
+                conquistas.
+              </p>
+            </article>
+            <article class="feature-card reveal" style="--delay: 140ms">
+              <div class="feature-top">
+                <span class="feature-icon"
+                  ><span class="icon" aria-hidden="true">insights</span></span
+                ><span class="feature-number">03</span>
+              </div>
+              <h3>Uma visão mais clara</h3>
+              <p>
+                Consulte saldo disponível, previsão do mês e gráficos de receitas, despesas e
+                categorias.
+              </p>
+            </article>
+            <article class="feature-card reveal" style="--delay: 0ms">
+              <div class="feature-top">
+                <span class="feature-icon"
+                  ><span class="icon" aria-hidden="true">event_repeat</span></span
+                ><span class="feature-number">04</span>
+              </div>
+              <h3>Rotina sob controle</h3>
+              <p>
+                Cadastre lançamentos mensais recorrentes e confirme as pendências quando forem
+                realizadas.
+              </p>
+            </article>
+            <article class="feature-card reveal" style="--delay: 70ms">
+              <div class="feature-top">
+                <span class="feature-icon"
+                  ><span class="icon" aria-hidden="true">category</span></span
+                ><span class="feature-number">05</span>
+              </div>
+              <h3>Categorias do seu jeito</h3>
+              <p>
+                Use as categorias do app ou crie as suas para organizar os registros conforme sua
+                rotina.
+              </p>
+            </article>
+            <article class="feature-card reveal" style="--delay: 140ms">
+              <div class="feature-top">
+                <span class="feature-icon"
+                  ><span class="icon" aria-hidden="true">picture_as_pdf</span></span
+                ><span class="feature-number">06</span>
+              </div>
+              <h3>Relatórios para acompanhar</h3>
+              <p>
+                Visualize o mês atual ou os últimos seis meses e gere um PDF com o resumo
+                financeiro.
+              </p>
+            </article>
+          </div>
+          <p class="feature-footnote">
+            <span class="icon" aria-hidden="true">attach_file</span> Com anexos nos lançamentos,
+            notificações internas e opções de tema claro e escuro.
+          </p>
+        </div>
+      </section>
+
+      <!-- 4. TELAS DO APP: os botões alternam entre quatro painéis. -->
+      <section id="aplicativo" class="section container app-showcase">
+        <div class="center-heading reveal">
+          <p class="eyebrow">POR DENTRO DO APP</p>
+          <h2>Seu dinheiro.<br /><em>Uma nova perspectiva.</em></h2>
+          <p>Explore as principais telas do Nexus Finance.</p>
+        </div>
+        <div class="explorer reveal">
+          <div class="screen-tabs" role="tablist" aria-label="Telas do aplicativo">
+            <button
+              type="button"
+              role="tab"
+              id="tab-home"
+              aria-controls="painel-home"
+              aria-selected="true"
+              tabindex="0"
+            >
+              <span class="icon" aria-hidden="true">space_dashboard</span><span>Visão geral</span
+              ><span class="tab-number">01</span></button
+            ><button
+              type="button"
+              role="tab"
+              id="tab-flow"
+              aria-controls="painel-flow"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              <span class="icon" aria-hidden="true">swap_horiz</span><span>Movimentações</span
+              ><span class="tab-number">02</span></button
+            ><button
+              type="button"
+              role="tab"
+              id="tab-goals"
+              aria-controls="painel-goals"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              <span class="icon" aria-hidden="true">track_changes</span><span>Metas</span
+              ><span class="tab-number">03</span></button
+            ><button
+              type="button"
+              role="tab"
+              id="tab-reports"
+              aria-controls="painel-reports"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              <span class="icon" aria-hidden="true">bar_chart</span><span>Relatórios</span
+              ><span class="tab-number">04</span>
+            </button>
+          </div>
+          <!-- Tela 1: Visão geral. Edite os textos e valores aqui. -->
+          <div
+            id="painel-home"
+            class="screen-panel"
+            role="tabpanel"
+            aria-labelledby="tab-home"
+            tabindex="0"
+          >
+            <div class="showcase-device">
+              <div class="phone">
+                <div class="phone-camera"></div>
+                <div class="phone-status"><span>9:41</span><span>▮▮▮ &nbsp; ▰</span></div>
+                <div class="app-screen">
+                  <div class="app-header">
+                    <span class="app-avatar"
+                      ><span class="icon" aria-hidden="true">person_outline</span></span
+                    >
+                    <div><small>Bom dia,</small><strong>Seu próximo passo</strong></div>
+                    <span class="icon" aria-hidden="true">notifications_none</span>
+                  </div>
+                  <div class="app-balance">
+                    <div>
+                      Saldo disponível <span class="icon" aria-hidden="true">visibility</span>
+                    </div>
+                    <strong>R$ 1.450,00</strong><small>Organize hoje, planeje o amanhã</small>
+                  </div>
+                  <div class="app-section-title">Visão rápida <span>Este mês</span></div>
+                  <div class="app-mini-grid">
+                    <div class="app-card">
+                      <span class="mini-icon green"
+                        ><span class="icon" aria-hidden="true">south_west</span></span
+                      ><small>Receitas realizadas</small><strong>R$ 2.400,00</strong>
+                    </div>
+                    <div class="app-card">
+                      <span class="mini-icon red"
+                        ><span class="icon" aria-hidden="true">north_east</span></span
+                      ><small>Despesas realizadas</small><strong>R$ 950,00</strong>
+                    </div>
+                  </div>
+                  <div class="app-section-title">
+                    Seus objetivos <span class="icon" aria-hidden="true">more_horiz</span>
+                  </div>
+                  <div class="app-card app-goal">
+                    <div class="progress-ring"><b>60%</b></div>
+                    <div>
+                      <strong>Meu notebook</strong><small>R$ 1.800 de R$ 3.000</small
+                      ><span class="purple-text">Cada passo conta</span>
+                    </div>
+                  </div>
+                  <div class="app-section-title">Distribuição dos gastos</div>
+                  <div class="app-card app-categories">
+                    <div><span>Lazer</span><b>R$ 190</b></div>
+                    <div class="progress-track"><span style="width: 40%"></span></div>
+                    <div><span>Alimentação</span><b>R$ 380</b></div>
+                    <div class="progress-track">
+                      <span style="width: 80%; background: #9b8cff"></span>
+                    </div>
+                  </div>
+                  <div class="app-nav">
+                    <span class="selected"><span class="icon" aria-hidden="true">home</span></span
+                    ><span class=""><span class="icon" aria-hidden="true">swap_horiz</span></span
+                    ><span class="app-plus"><span class="icon" aria-hidden="true">add</span></span
+                    ><span class=""><span class="icon" aria-hidden="true">track_changes</span></span
+                    ><span class=""
+                      ><span class="icon" aria-hidden="true">person_outline</span></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="screen-explanation">
+              <span class="screen-count">01 / 04</span>
+              <h3>O essencial, logo de cara.</h3>
+              <p>
+                Saldo disponível, receitas, despesas e progresso da sua meta. Uma visão geral para
+                entender o seu momento.
+              </p>
+              <ul>
+                <li>
+                  <span class="icon" aria-hidden="true">check</span>Resumo do mês em um só lugar
+                </li>
+                <li>
+                  <span class="icon" aria-hidden="true">check</span>Receitas e despesas realizadas
+                </li>
+                <li>
+                  <span class="icon" aria-hidden="true">check</span>Acompanhamento visual de metas
+                </li>
+              </ul>
+              <span class="example-label">Demonstração visual</span>
+            </div>
+          </div>
+          <!-- Tela 2: Movimentações. Edite os textos e valores aqui. -->
+          <div
+            id="painel-flow"
+            class="screen-panel"
+            role="tabpanel"
+            aria-labelledby="tab-flow"
+            tabindex="0"
+            hidden=""
+          >
+            <div class="showcase-device">
+              <div class="phone">
+                <div class="phone-camera"></div>
+                <div class="phone-status"><span>9:41</span><span>▮▮▮ &nbsp; ▰</span></div>
+                <div class="app-screen">
+                  <div class="app-page-title">
+                    Fluxo financeiro <span class="icon" aria-hidden="true">tune</span>
+                  </div>
+                  <div class="app-balance">
+                    <div>Resultado do mês</div>
+                    <strong>R$ 1.450,00</strong><small>Receitas menos despesas realizadas</small>
+                  </div>
+                  <div class="app-filter">
+                    <b>Geral</b><span>Receitas</span><span>Despesas</span>
+                  </div>
+                  <div class="app-section-title">Outubro de 2026</div>
+                  <div class="transaction-row">
+                    <span class="mini-icon green"
+                      ><span class="icon" aria-hidden="true">work_outline</span></span
+                    >
+                    <div><strong>Bolsa de estágio</strong><small>Receita · Confirmada</small></div>
+                    <b class="green-text">+ R$ 1.500,00</b>
+                  </div>
+                  <div class="transaction-row">
+                    <span class="mini-icon red"
+                      ><span class="icon" aria-hidden="true">restaurant</span></span
+                    >
+                    <div><strong>Alimentação</strong><small>Despesa · Confirmada</small></div>
+                    <b class="red-text">− R$ 380,00</b>
+                  </div>
+                  <div class="transaction-row">
+                    <span class="mini-icon red"
+                      ><span class="icon" aria-hidden="true">directions_bus</span></span
+                    >
+                    <div><strong>Transporte</strong><small>Despesa · Confirmada</small></div>
+                    <b class="red-text">− R$ 180,00</b>
+                  </div>
+                  <div class="transaction-row">
+                    <span class="mini-icon"
+                      ><span class="icon" aria-hidden="true">subscriptions</span></span
+                    >
+                    <div><strong>Assinatura</strong><small>Despesa · Pendente</small></div>
+                    <b>R$ 29,90</b>
+                  </div>
+                  <div class="app-info">
+                    <span class="icon" aria-hidden="true">info</span> Consulte seus registros e
+                    acompanhe o que ainda está pendente.
+                  </div>
+                  <div class="app-nav">
+                    <span class=""><span class="icon" aria-hidden="true">home</span></span
+                    ><span class="selected"
+                      ><span class="icon" aria-hidden="true">swap_horiz</span></span
+                    ><span class="app-plus"><span class="icon" aria-hidden="true">add</span></span
+                    ><span class=""><span class="icon" aria-hidden="true">track_changes</span></span
+                    ><span class=""
+                      ><span class="icon" aria-hidden="true">person_outline</span></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="screen-explanation">
+              <span class="screen-count">02 / 04</span>
+              <h3>Cada registro conta uma parte.</h3>
+              <p>
+                Acompanhe o que entrou e o que saiu, filtre receitas e despesas e consulte os
+                detalhes de cada lançamento.
+              </p>
+              <ul>
+                <li>
+                  <span class="icon" aria-hidden="true">check</span>Filtros por receitas e despesas
+                </li>
+                <li><span class="icon" aria-hidden="true">check</span>Status de cada lançamento</li>
+                <li>
+                  <span class="icon" aria-hidden="true">check</span>Anexos para guardar comprovantes
+                </li>
+              </ul>
+              <span class="example-label">Demonstração visual</span>
+            </div>
+          </div>
+          <!-- Tela 3: Metas. Edite os textos e valores aqui. -->
+          <div
+            id="painel-goals"
+            class="screen-panel"
+            role="tabpanel"
+            aria-labelledby="tab-goals"
+            tabindex="0"
+            hidden=""
+          >
+            <div class="showcase-device">
+              <div class="phone">
+                <div class="phone-camera"></div>
+                <div class="phone-status"><span>9:41</span><span>▮▮▮ &nbsp; ▰</span></div>
+                <div class="app-screen">
+                  <div class="app-page-title">
+                    Metas financeiras
+                    <span class="icon" aria-hidden="true">add_circle_outline</span>
+                  </div>
+                  <p class="app-subtitle">Um passo mais perto do que importa.</p>
+                  <div class="app-card goal-detail">
+                    <div class="goal-label">
+                      <span class="icon" aria-hidden="true">laptop_mac</span
+                      ><span>Meu notebook</span>
+                    </div>
+                    <div class="progress-ring large-ring"><b>60%</b></div>
+                    <strong>R$ 1.800,00</strong><small>guardados de R$ 3.000,00</small>
+                    <div class="progress-track"><span style="width: 60%"></span></div>
+                    <p>Faltam R$ 1.200,00 para sua conquista.</p>
+                  </div>
+                  <div class="app-card second-goal">
+                    <div class="goal-label">
+                      <span class="icon" aria-hidden="true">flight_takeoff</span
+                      ><span>Minha viagem</span>
+                    </div>
+                    <strong>R$ 450,00 <small>de R$ 1.500,00</small></strong>
+                    <div class="progress-track"><span style="width: 30%"></span></div>
+                  </div>
+                  <div class="app-nav">
+                    <span class=""><span class="icon" aria-hidden="true">home</span></span
+                    ><span class=""><span class="icon" aria-hidden="true">swap_horiz</span></span
+                    ><span class="app-plus"><span class="icon" aria-hidden="true">add</span></span
+                    ><span class="selected"
+                      ><span class="icon" aria-hidden="true">track_changes</span></span
+                    ><span class=""
+                      ><span class="icon" aria-hidden="true">person_outline</span></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="screen-explanation">
+              <span class="screen-count">03 / 04</span>
+              <h3>Seus planos ganham forma.</h3>
+              <p>
+                Transforme aquela vontade em um objetivo visível. Acompanhe o valor guardado e veja
+                o quanto falta para chegar lá.
+              </p>
+              <ul>
+                <li>
+                  <span class="icon" aria-hidden="true">check</span>Objetivo e valor inicial
+                  personalizados
+                </li>
+                <li>
+                  <span class="icon" aria-hidden="true">check</span>Progresso em reais e porcentagem
+                </li>
+                <li>
+                  <span class="icon" aria-hidden="true">check</span>Edição e acompanhamento das
+                  metas
+                </li>
+              </ul>
+              <span class="example-label">Demonstração visual</span>
+            </div>
+          </div>
+          <!-- Tela 4: Relatórios. Edite os textos e valores aqui. -->
+          <div
+            id="painel-reports"
+            class="screen-panel"
+            role="tabpanel"
+            aria-labelledby="tab-reports"
+            tabindex="0"
+            hidden=""
+          >
+            <div class="showcase-device">
+              <div class="phone">
+                <div class="phone-camera"></div>
+                <div class="phone-status"><span>9:41</span><span>▮▮▮ &nbsp; ▰</span></div>
+                <div class="app-screen">
+                  <div class="app-page-title">
+                    Relatórios <span class="icon" aria-hidden="true">picture_as_pdf</span>
+                  </div>
+                  <div class="app-card report-period">
+                    Últimos 6 meses <span class="icon" aria-hidden="true">expand_more</span>
+                  </div>
+                  <div class="app-section-title">Receitas × Despesas</div>
+                  <div class="app-card">
+                    <div class="bar-chart">
+                      <div>
+                        <div class="bar-pair">
+                          <span style="height: 60%"></span><span style="height: 45%"></span>
+                        </div>
+                        <small>Mai</small>
+                      </div>
+                      <div>
+                        <div class="bar-pair">
+                          <span style="height: 75%"></span><span style="height: 55%"></span>
+                        </div>
+                        <small>Jun</small>
+                      </div>
+                      <div>
+                        <div class="bar-pair">
+                          <span style="height: 65%"></span><span style="height: 40%"></span>
+                        </div>
+                        <small>Jul</small>
+                      </div>
+                      <div>
+                        <div class="bar-pair">
+                          <span style="height: 82%"></span><span style="height: 57%"></span>
+                        </div>
+                        <small>Ago</small>
+                      </div>
+                      <div>
+                        <div class="bar-pair">
+                          <span style="height: 92%"></span><span style="height: 63%"></span>
+                        </div>
+                        <small>Set</small>
+                      </div>
+                      <div>
+                        <div class="bar-pair">
+                          <span style="height: 85%"></span><span style="height: 34%"></span>
+                        </div>
+                        <small>Out</small>
+                      </div>
+                    </div>
+                    <div class="chart-legend"><span>Receitas</span><span>Despesas</span></div>
+                  </div>
+                  <div class="app-card report-total">
+                    <small>Receitas no período</small
+                    ><strong class="green-text">R$ 13.800,00</strong
+                    ><small>Despesas no período</small><strong class="red-text">R$ 8.450,00</strong
+                    ><small>Resultado do período</small><strong>R$ 5.350,00</strong>
+                  </div>
+                  <div class="app-export">
+                    <span class="icon" aria-hidden="true">picture_as_pdf</span> Exportar relatório
+                  </div>
+                  <div class="app-nav">
+                    <span class="selected"><span class="icon" aria-hidden="true">home</span></span
+                    ><span class=""><span class="icon" aria-hidden="true">swap_horiz</span></span
+                    ><span class="app-plus"><span class="icon" aria-hidden="true">add</span></span
+                    ><span class=""><span class="icon" aria-hidden="true">track_changes</span></span
+                    ><span class=""
+                      ><span class="icon" aria-hidden="true">person_outline</span></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="screen-explanation">
+              <span class="screen-count">04 / 04</span>
+              <h3>Veja a sua história em números.</h3>
+              <p>
+                Compare receitas e despesas ao longo do tempo e leve o resumo com você em um
+                relatório PDF.
+              </p>
+              <ul>
+                <li>
+                  <span class="icon" aria-hidden="true">check</span>Mês atual ou últimos seis meses
+                </li>
+                <li>
+                  <span class="icon" aria-hidden="true">check</span>Comparação visual dos resultados
+                </li>
+                <li>
+                  <span class="icon" aria-hidden="true">check</span>Exportação e compartilhamento de
+                  PDF
+                </li>
+              </ul>
+              <span class="example-label">Demonstração visual</span>
+            </div>
+          </div>
+        </div>
+        <p class="demo-disclaimer">
+          Mockups baseados nas telas do projeto. Valores e movimentações são ilustrativos.
+        </p>
+      </section>
+
+      <!-- 5. COMO FUNCIONA: os quatro passos de uso. -->
+      <section id="como-funciona" class="section steps-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">COMO FUNCIONA</p>
+              <h2>Comece simples.<br /><em>Crie o seu ritmo.</em></h2>
+            </div>
+            <p>Um registro de cada vez, uma visão cada vez mais completa.</p>
+          </div>
+          <div class="steps-grid">
+            <article class="step reveal">
+              <span class="step-number">01</span>
+              <h3>Crie sua conta</h3>
+              <p>Cadastre nome, e-mail, data de nascimento e senha para acessar o aplicativo.</p>
+            </article>
+            <article class="step reveal">
+              <span class="step-number">02</span>
+              <h3>Registre sua rotina</h3>
+              <p>
+                Adicione receitas e despesas. Escolha a categoria, a conta e a data de cada
+                lançamento.
+              </p>
+            </article>
+            <article class="step reveal">
+              <span class="step-number">03</span>
+              <h3>Dê nome aos seus planos</h3>
+              <p>Crie uma meta com o valor desejado e o que você já conseguiu guardar.</p>
+            </article>
+            <article class="step reveal">
+              <span class="step-number">04</span>
+              <h3>Acompanhe e entenda</h3>
+              <p>
+                Consulte o resumo, confirme pendências e veja sua evolução nos gráficos e
+                relatórios.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. DIFERENCIAIS: benefícios do projeto. -->
+      <section id="diferenciais" class="section container differences">
+        <div class="difference-intro reveal">
+          <p class="eyebrow">PENSADO PARA O DIA A DIA</p>
+          <h2>Menos complicação.<br /><em>Mais direção.</em></h2>
+          <p>O foco é tornar a organização financeira parte de uma rotina possível.</p>
+          <span class="large-monogram" aria-hidden="true">N<span>EXUS</span></span>
+        </div>
+        <div class="difference-list">
+          <article class="difference reveal">
+            <span class="feature-icon"
+              ><span class="icon" aria-hidden="true">dashboard_customize</span></span
+            >
+            <div>
+              <h3>Tudo conversa</h3>
+              <p>Receitas, despesas, metas e relatórios reunidos no mesmo aplicativo.</p>
+            </div>
+          </article>
+          <article class="difference reveal">
+            <span class="feature-icon"><span class="icon" aria-hidden="true">touch_app</span></span>
+            <div>
+              <h3>Um caminho intuitivo</h3>
+              <p>
+                Acesso direto às principais ferramentas e formulários organizados para cada
+                registro.
+              </p>
+            </div>
+          </article>
+          <article class="difference reveal">
+            <span class="feature-icon"><span class="icon" aria-hidden="true">dark_mode</span></span>
+            <div>
+              <h3>Do seu jeito</h3>
+              <p>Escolha entre os temas claro e escuro e personalize suas categorias.</p>
+            </div>
+          </article>
+          <article class="difference reveal">
+            <span class="feature-icon"
+              ><span class="icon" aria-hidden="true">visibility</span></span
+            >
+            <div>
+              <h3>Informações que fazem sentido</h3>
+              <p>
+                Distinção entre valores realizados, pendências e previsão para acompanhar o mês.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 7. TECNOLOGIAS: os logos estão na pasta assets. -->
+      <section id="tecnologias" class="section tech-section">
+        <div class="container">
+          <div class="center-heading reveal">
+            <p class="eyebrow">POR TRÁS DA EXPERIÊNCIA</p>
+            <h2>Uma base conectada<br /><em>ao que queremos construir.</em></h2>
+            <p>As tecnologias que fazem parte do projeto Nexus Finance.</p>
+          </div>
+          <div class="tech-grid">
+            <article class="tech-item reveal">
+              <img src="assets/tech-react.svg" alt="" width="38" height="38" loading="lazy" />
+              <h3>React Native</h3>
+              <p>Aplicativo</p>
+            </article>
+            <article class="tech-item reveal">
+              <img src="assets/tech-expo.svg" alt="" width="38" height="38" loading="lazy" />
+              <h3>Expo</h3>
+              <p>Desenvolvimento multiplataforma</p>
+            </article>
+            <article class="tech-item reveal">
+              <img src="assets/tech-javascript.svg" alt="" width="38" height="38" loading="lazy" />
+              <h3>JavaScript</h3>
+              <p>Interface</p>
+            </article>
+            <article class="tech-item reveal">
+              <img src="assets/tech-typescript.svg" alt="" width="38" height="38" loading="lazy" />
+              <h3>TypeScript</h3>
+              <p>Backend</p>
+            </article>
+            <article class="tech-item reveal">
+              <img src="assets/tech-nodedotjs.svg" alt="" width="38" height="38" loading="lazy" />
+              <h3>Node.js</h3>
+              <p>Servidor</p>
+            </article>
+            <article class="tech-item reveal">
+              <img src="assets/tech-express.svg" alt="" width="38" height="38" loading="lazy" />
+              <h3>Express</h3>
+              <p>API</p>
+            </article>
+            <article class="tech-item reveal">
+              <img src="assets/tech-mysql.svg" alt="" width="38" height="38" loading="lazy" />
+              <h3>MySQL</h3>
+              <p>Banco de dados</p>
+            </article>
+          </div>
+          <div class="architecture-note">
+            <span>Aplicativo</span><i></i><span>API</span><i></i><span>Banco de dados</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. EQUIPE: nomes, funções, fotos e links são editados diretamente abaixo. -->
+      <section id="equipe" class="section container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">QUEM FAZ ACONTECER</p>
+            <h2>Nossa <em>equipe.</em></h2>
+          </div>
+          <p>
+            Quatro pessoas, uma proposta em comum: ajudar jovens a ter mais clareza sobre suas
+            finanças.
+          </p>
+        </div>
+        <div class="team-grid">
+          <!-- DESENVOLVEDOR 1: edite apenas este card para trocar os dados desta pessoa. -->
+          <article class="team-card reveal">
+            <div class="team-photo">
+              <!-- Para colocar uma foto, substitua os três spans abaixo por:
+      <img src="assets/desenvolvedor-1.jpg" alt="Foto de Nome da Pessoa" width="400" height="400" loading="lazy">
+    --><span class="portrait-symbol"
+                ><span class="icon" aria-hidden="true">person_outline</span></span
+              ><span class="photo-label">FOTO DO DESENVOLVEDOR</span
+              ><span class="portrait-number">01</span>
+            </div>
+            <div class="team-info">
+              <h3>DESENVOLVEDOR 1</h3>
+              <p class="team-role">Integrante da equipe</p>
+              <p>Parte da equipe responsável pela construção do Nexus Finance.</p>
+              <div class="social-links">
+                <!-- Quando tiver os links reais, troque cada span.unavailable por um link:
+      <a href="https://github.com/SEU-USUARIO" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/SEU-USUARIO" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    --><span
+                  class="unavailable"
+                  title="Link ainda não informado pela equipe"
+                  aria-label=" GitHub: link ainda não informado"
+                  ><img src="assets/tech-github.svg" alt="" width="17" height="17" /> GitHub</span
+                ><span
+                  class="unavailable"
+                  title="Link ainda não informado pela equipe"
+                  aria-label="in LinkedIn: link ainda não informado"
+                  ><span class="linkedin-icon" aria-hidden="true">in</span> LinkedIn</span
+                >
+              </div>
+            </div>
+          </article>
+          <!-- DESENVOLVEDOR 2: edite apenas este card para trocar os dados desta pessoa. -->
+          <article class="team-card reveal">
+            <div class="team-photo">
+              <!-- Para colocar uma foto, substitua os três spans abaixo por:
+      <img src="assets/desenvolvedor-2.jpg" alt="Foto de Nome da Pessoa" width="400" height="400" loading="lazy">
+    --><span class="portrait-symbol"
+                ><span class="icon" aria-hidden="true">person_outline</span></span
+              ><span class="photo-label">FOTO DO DESENVOLVEDOR</span
+              ><span class="portrait-number">02</span>
+            </div>
+            <div class="team-info">
+              <h3>DESENVOLVEDOR 2</h3>
+              <p class="team-role">Integrante da equipe</p>
+              <p>Parte da equipe responsável pela construção do Nexus Finance.</p>
+              <div class="social-links">
+                <!-- Quando tiver os links reais, troque cada span.unavailable por um link:
+      <a href="https://github.com/SEU-USUARIO" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/SEU-USUARIO" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    --><span
+                  class="unavailable"
+                  title="Link ainda não informado pela equipe"
+                  aria-label=" GitHub: link ainda não informado"
+                  ><img src="assets/tech-github.svg" alt="" width="17" height="17" /> GitHub</span
+                ><span
+                  class="unavailable"
+                  title="Link ainda não informado pela equipe"
+                  aria-label="in LinkedIn: link ainda não informado"
+                  ><span class="linkedin-icon" aria-hidden="true">in</span> LinkedIn</span
+                >
+              </div>
+            </div>
+          </article>
+          <!-- DESENVOLVEDOR 3: edite apenas este card para trocar os dados desta pessoa. -->
+          <article class="team-card reveal">
+            <div class="team-photo">
+              <!-- Para colocar uma foto, substitua os três spans abaixo por:
+      <img src="assets/desenvolvedor-3.jpg" alt="Foto de Nome da Pessoa" width="400" height="400" loading="lazy">
+    --><span class="portrait-symbol"
+                ><span class="icon" aria-hidden="true">person_outline</span></span
+              ><span class="photo-label">FOTO DO DESENVOLVEDOR</span
+              ><span class="portrait-number">03</span>
+            </div>
+            <div class="team-info">
+              <h3>DESENVOLVEDOR 3</h3>
+              <p class="team-role">Integrante da equipe</p>
+              <p>Parte da equipe responsável pela construção do Nexus Finance.</p>
+              <div class="social-links">
+                <!-- Quando tiver os links reais, troque cada span.unavailable por um link:
+      <a href="https://github.com/SEU-USUARIO" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/SEU-USUARIO" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    --><span
+                  class="unavailable"
+                  title="Link ainda não informado pela equipe"
+                  aria-label=" GitHub: link ainda não informado"
+                  ><img src="assets/tech-github.svg" alt="" width="17" height="17" /> GitHub</span
+                ><span
+                  class="unavailable"
+                  title="Link ainda não informado pela equipe"
+                  aria-label="in LinkedIn: link ainda não informado"
+                  ><span class="linkedin-icon" aria-hidden="true">in</span> LinkedIn</span
+                >
+              </div>
+            </div>
+          </article>
+          <!-- DESENVOLVEDOR 4: edite apenas este card para trocar os dados desta pessoa. -->
+          <article class="team-card reveal">
+            <div class="team-photo">
+              <!-- Para colocar uma foto, substitua os três spans abaixo por:
+      <img src="assets/desenvolvedor-4.jpg" alt="Foto de Nome da Pessoa" width="400" height="400" loading="lazy">
+    --><span class="portrait-symbol"
+                ><span class="icon" aria-hidden="true">person_outline</span></span
+              ><span class="photo-label">FOTO DO DESENVOLVEDOR</span
+              ><span class="portrait-number">04</span>
+            </div>
+            <div class="team-info">
+              <h3>DESENVOLVEDOR 4</h3>
+              <p class="team-role">Integrante da equipe</p>
+              <p>Parte da equipe responsável pela construção do Nexus Finance.</p>
+              <div class="social-links">
+                <!-- Quando tiver os links reais, troque cada span.unavailable por um link:
+      <a href="https://github.com/SEU-USUARIO" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/SEU-USUARIO" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    --><span
+                  class="unavailable"
+                  title="Link ainda não informado pela equipe"
+                  aria-label=" GitHub: link ainda não informado"
+                  ><img src="assets/tech-github.svg" alt="" width="17" height="17" /> GitHub</span
+                ><span
+                  class="unavailable"
+                  title="Link ainda não informado pela equipe"
+                  aria-label="in LinkedIn: link ainda não informado"
+                  ><span class="linkedin-icon" aria-hidden="true">in</span> LinkedIn</span
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 9. CHAMADA FINAL: substitua #aplicativo pelo endereço oficial quando houver. -->
+      <section class="cta-section container reveal">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <p class="eyebrow">SEU PRÓXIMO PASSO</p>
+        <h2>Grandes planos começam<br />com pequenas <em>escolhas.</em></h2>
+        <p>
+          Conheça uma forma mais clara de organizar seu dinheiro<br class="desktop-break" />
+          e acompanhar o que importa para você.
+        </p>
+        <a id="main-cta" class="button" href="#aplicativo">Conhecer o aplicativo</a
+        ><span class="cta-signature">Nexus Finance · Organização para ir além.</span>
+      </section>
+    </main>
+
+    <!-- 10. RODAPÉ: lembre de atualizar os nomes aqui também. -->
+    <footer id="rodape">
+      <div class="container footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="#inicio"
+            ><span class="brand-mark">N</span
+            ><span>Nexus<span class="brand-light"> Finance</span></span></a
+          >
+          <p>Mais clareza sobre seu dinheiro.<br />Mais espaço para o seu futuro.</p>
+          <span class="project-label">Projeto acadêmico de gestão financeira.</span>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <a href="#sobre">Sobre o projeto</a><a href="#funcionalidades">Funcionalidades</a
+          ><a href="#aplicativo">Conheça o app</a><a href="#tecnologias">Tecnologias</a>
+        </div>
+        <div>
+          <h3>O projeto</h3>
+          <a href="#como-funciona">Como funciona</a><a href="#diferenciais">Diferenciais</a
+          ><a href="#equipe">Nossa equipe</a
+          ><span
+            class="unavailable"
+            title="Link ainda não informado pela equipe"
+            aria-label="GitHub do projeto: link ainda não informado"
+            >GitHub do projeto</span
+          >
+        </div>
+        <div>
+          <h3>Desenvolvimento</h3>
+          <a href="#equipe">DESENVOLVEDOR 1</a><a href="#equipe">DESENVOLVEDOR 2</a
+          ><a href="#equipe">DESENVOLVEDOR 3</a><a href="#equipe">DESENVOLVEDOR 4</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2026 Nexus Finance. Todos os direitos reservados.</p>
+        <span>Feito em equipe. Pensado para você.</span>
+      </div>
+    </footer>
+  </body>
+</html>
