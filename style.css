@@ -1734,7 +1734,7 @@ h2 em {
 .social-links {
   display: flex;
   align-items: center;
-  gap: 17px;
+  gap: 10px;
   margin-top: 22px;
   border-top: 1px solid #33303d;
   padding-top: 16px;
@@ -1744,7 +1744,7 @@ h2 em {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 11px;
+  font-size: 13px;
 }
 .social-links img {
   width: 16px;
